@@ -14,7 +14,7 @@ while True:
 
     # проверка корректности ввода
     if len(expressing) != len(''.join(list_of_numbers)) + len(''.join(list_of_operators))\
-            or (len(''.join(re.split('[-+*/^\d]+', expressing))) > 0):
+            or (len(''.join(re.split('[-+*/^\d.]+', expressing))) > 0):
         print(warning)
         continue
 
